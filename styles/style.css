@@ -82,12 +82,11 @@
   background-color: #1a2d67; }
 
 .card--darkmauve {
-  background-color: #73374e; }
+  background-color: #631e39; }
 
 .card--light:hover {
   box-shadow: 0 4px 24px 0 #0e4a1f;
-  transition: box-shadow 0.2s;
-  padding-bottom: 10px; }
+  transition: box-shadow 0.2s; }
 
 .card--dark:hover {
   box-shadow: 0 4px 24px 0 #5a0202;
