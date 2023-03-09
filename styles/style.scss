@@ -1,0 +1,36 @@
+@import "variables";
+@import "extendables";
+@import "card";
+
+.body--background {
+  background-color: $background-color;
+}
+
+.logo__image {
+  @extend %image--properties;
+  background-image: url("../images/CSS_logo.png");
+  width: $logo-dimension;
+  height: $logo-dimension;
+  flex-wrap: wrap;
+}
+
+.page__header {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 1em;
+}
+
+.page__heading {
+  font-family: $font-header;
+  margin: $no-spacing;
+  color: #24e0ff;
+  text-shadow: 2px 2px #018207;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: $container-gap;
+  flex-wrap: wrap;
+}

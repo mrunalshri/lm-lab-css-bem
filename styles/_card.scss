@@ -1,0 +1,107 @@
+@import "variables";
+@import "extendables";
+
+.card--lightblue {
+  @extend %card__wrapper;
+  background-color: $lightblue-color;
+  &:hover {
+    @extend %card__light--hover;
+  }
+}
+
+.card--lightsea {
+  @extend %card__wrapper;
+  background-color: $lightsea-color;
+  &:hover {
+    @extend %card__light--hover;
+  }
+}
+
+.card--lightred {
+  @extend %card__wrapper;
+  background-color: $lightred-color;
+  &:hover {
+    @extend %card__light--hover;
+  }
+}
+
+.card--lightpurple {
+  @extend %card__wrapper;
+  background-color: $lightpurple-color;
+  &:hover {
+    @extend %card__light--hover;
+  }
+}
+
+.card--darkgrey {
+  @extend %card__wrapper;
+  background-color: $darkgrey-color;
+  &:hover {
+    @extend %card__dark--hover;
+  }
+}
+
+.card--darkgreen {
+  @extend %card__wrapper;
+  background-color: $darkgreen-color;
+  &:hover {
+    @extend %card__dark--hover;
+  }
+}
+
+.card--darkblue {
+  @extend %card__wrapper;
+  background-color: $darkblue-color;
+  &:hover {
+    @extend %card__dark--hover;
+  }
+}
+
+.card--darkmauve {
+  @extend %card__wrapper;
+  background-color: $darkmauve-color;
+  &:hover {
+    @extend %card__dark--hover;
+  }
+}
+
+.card--light:hover {
+  box-shadow: 0 4px 24px 0 #0e4a1f;
+  transition: box-shadow 0.2s;
+}
+
+.card--dark:hover {
+  box-shadow: 0 4px 24px 0 #5a0202;
+  transition: box-shadow 0.2s;
+}
+
+.card__img {
+  max-width: 100%;
+  height: 40%;
+}
+
+.card__top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card__btn--danger {
+  @extend %card__button;
+  background-image: url("../images/WarningIcon.png");
+}
+
+.card__btn--safe {
+  @extend %card__button;
+  background-image: url("../images/SafeIcon.png");
+}
+
+.card__text--dark {
+  color: $card-dark-text;
+  margin-block: $no-spacing;
+}
+
+.card__text--light {
+  color: $card-light-text;
+  margin-block: $no-spacing;
+}

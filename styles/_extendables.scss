@@ -1,0 +1,44 @@
+@import "variables";
+
+%card__wrapper {
+  border: 1px;
+  padding: 10px;
+  width: $card-width;
+  box-shadow: $no-spacing 4px 8px $no-spacing $primary-shadow-color;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: $card-gap;
+  height: 22rem;
+}
+
+%image--properties {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
+}
+
+%card__button {
+  @extend %image--properties;
+  width: $card-button-width;
+  height: $card-button-height;
+}
+
+%card__light--hover {
+  box-shadow: 0px 1px 2px 0px rgba(70, 249, 83, 0.7),
+    1px 2px 4px 0px rgba(70, 249, 83, 0.7),
+    2px 4px 8px 0px rgba(70, 249, 83, 0.7),
+    2px 4px 16px 0px rgba(70, 249, 83, 0.7);
+  transition: box-shadow 0.2s;
+}
+
+%card__dark--hover {
+  box-shadow: 0px 1px 2px 0px rgba(247, 33, 25, 0.7),
+    1px 2px 4px 0px rgba(247, 33, 25, 0.7),
+    2px 4px 8px 0px rgba(247, 33, 25, 0.7),
+    2px 4px 16px 0px rgba(247, 33, 25, 0.7);
+  transition: box-shadow 0.2s;
+}

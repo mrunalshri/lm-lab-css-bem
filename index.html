@@ -4,29 +4,114 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap"
+      rel="stylesheet"
+    />
     <title>BEM Notation & OOCSS: Writing scaleable CSS</title>
   </head>
 
-  <body>
-    <h1>BEM Wars</h1>
+  <body class="body--background">
+    <header class="page__header">
+      <button class="logo__image"></button>
+      <h1 class="page__heading">BEM Wars</h1>
+    </header>
+
     <div class="container">
-      <div class="card card--dark">
-        <h2 class="card__text">The Dark Side</h2>
-        <img class="card__img" src="./images/vader.jpeg" />
-        <p class="card__text">Nesting!</p>
-        <p class="card__text">Conflict!</p>
-        <p class="card__text">Specificity Wars!</p>
-        <p class="card__text">Cookies</p>
+      <div class="card--darkgrey">
+        <section class="card__top">
+          <h2 class="card__text--dark">The Dark Side</h2>
+          <button class="card__btn--danger"></button>
+        </section>
+        <img class="card__img" src="./images/DarthSidious.jpeg" />
+        <p class="card__text--dark">Not reusable</p>
+        <p class="card__text--dark">Unlimited Power!</p>
+        <p class="card__text--dark">Execute Order 66!</p>
+        <p class="card__text--dark">There is no mercy...</p>
       </div>
 
-      <div class="card card--light">
-        <h2>The Force</h2>
+      <div class="card--darkgreen">
+        <section class="card__top">
+          <h2 class="card__text--dark">The Dark Side</h2>
+          <button class="card__btn--danger"></button>
+        </section>
+        <img class="card__img" src="./images/vader.jpeg" />
+        <p class="card__text--dark">Nesting!</p>
+        <p class="card__text--dark">Conflict!</p>
+        <p class="card__text--dark">Specificity Wars!</p>
+        <p class="card__text--dark">Cookies</p>
+      </div>
+
+      <div class="card--darkblue">
+        <section class="card__top">
+          <h2 class="card__text--dark">The Dark Side</h2>
+          <button class="card__btn--danger"></button>
+        </section>
+        <img class="card__img" src="./images/maul.jpeg" />
+        <p class="card__text--dark">Fear</p>
+        <p class="card__text--dark">Anger</p>
+        <p class="card__text--dark">I am efficient</p>
+        <p class="card__text--dark">Action speaks louder than words</p>
+      </div>
+
+      <div class="card--darkmauve">
+        <section class="card__top">
+          <h2 class="card__text--dark">The Dark Side</h2>
+          <button class="card__btn--danger"></button>
+        </section>
+        <img class="card__img" src="./images/boba_fett.jpeg" />
+        <p class="card__text--dark">Dream</p>
+        <p class="card__text--dark">Hunter</p>
+        <p class="card__text--dark">Survivor</p>
+        <p class="card__text--dark">Rule with Respect</p>
+      </div>
+
+      <div class="card--lightblue">
+        <section class="card__top">
+          <h2 class="card__text--light">The Force</h2>
+          <button class="card__btn--safe"></button>
+        </section>
         <img class="card__img" src="./images/yoda.jpeg" />
-        <p>Love</p>
-        <p>Beauty</p>
-        <p>CSS that Scales!</p>
-        <p>Great warrior. Wars not make one great!</p>
+        <p class="card__text--light">Love</p>
+        <p class="card__text--light">Beauty</p>
+        <p class="card__text--light">CSS that Scales!</p>
+        <p class="card__text--light">Great warrior. Wars not make one great!</p>
+      </div>
+      <div class="card--lightred">
+        <section class="card__top">
+          <h2 class="card__text--light">The Force</h2>
+          <button class="card__btn--safe"></button>
+        </section>
+        <img class="card__img" src="./images/Luke_Skywalker.jpeg" />
+        <p class="card__text--light">Power</p>
+        <p class="card__text--light">I am not afraid</p>
+        <p class="card__text--light">I came to this island to die</p>
+        <p class="card__text--light">I'll never turn to the Dark Side!</p>
+      </div>
+      <div class="card--lightpurple">
+        <section class="card__top">
+          <h2 class="card__text--light">The Force</h2>
+          <button class="card__btn--safe"></button>
+        </section>
+        <img class="card__img" src="./images/obiwan.jpg" />
+        <p class="card__text--light">Hope</p>
+        <p class="card__text--light">Intelligence</p>
+        <p class="card__text--light">Be mindful</p>
+        <p class="card__text--light">Skill is the child of patience!</p>
+      </div>
+      <div class="card--lightsea">
+        <section class="card__top">
+          <h2 class="card__text--light">The Force</h2>
+          <button class="card__btn--safe"></button>
+        </section>
+        <img class="card__img" src="./images/Qui-Gon_Jinn.png" />
+        <p class="card__text--light">Feel</p>
+        <p class="card__text--light">Concentrate</p>
+        <p class="card__text--light">Use Your Instincts</p>
+        <p class="card__text--light">Focus Determines Reality!</p>
       </div>
     </div>
   </body>
