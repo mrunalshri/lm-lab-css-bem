@@ -1,0 +1,25 @@
+{
+  "name": "lm-lab-css-bem",
+  "version": "1.0.0",
+  "description": "A project on how to write scaleable CSS using BEM notation and OOCSS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass styles/style.scss styles/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrunalshri/lm-lab-css-bem.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrunalshri/lm-lab-css-bem/issues"
+  },
+  "homepage": "https://github.com/mrunalshri/lm-lab-css-bem#readme",
+  "dependencies": {
+    "g": "^2.0.1",
+    "node-sass": "^8.0.0",
+    "scss": "^0.2.4"
+  }
+}
